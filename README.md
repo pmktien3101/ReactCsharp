@@ -20,3 +20,10 @@ app.UseCors(builder =>
     .AllowAnyOrigin()
     .AllowAnyMethod();
 });
+##### tại folder data để kết nối vs database, tạo trên .net ko tạo bảng bằng vật lý 
++ install 6 cái entity framework core
++ config để tạo bảng
++ tạo bảng rồi thì phải kết nối vs csdl
+##### migrate database 
++ add-migration init-todos
++ update-Database để có thể tạo bảng trong csdl
