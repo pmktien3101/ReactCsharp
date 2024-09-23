@@ -24,6 +24,17 @@ app.UseCors(builder =>
 + install 6 cái entity framework core
 + config để tạo bảng
 + tạo bảng rồi thì phải kết nối vs csdl
-##### migrate database 
+##### migrate database để tạo cấu trúc cho table
 + add-migration init-todos
 + update-Database để có thể tạo bảng trong csdl
+##### tạo dữ liệu mẫu cho table
++ tạo folder tên seeders
++ tạo databseSeeder để static 
++ xóa folder migration để chạy lại 
++ bỏ modelBuilder.Seed() trong Data file
++  add-migration init-todos
++ update-Database để có thể tạo bảng trong csdl
+##### hiện dữ liệu ra trong phần controller
++ tạo folder service
++ cấu hình lại trong program.cs
+  builder.Services.AddTransient<ITodosService, TodoService>();
